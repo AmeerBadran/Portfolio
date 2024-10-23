@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Jost, sans-serif;
+}
+
+body {
+  background: #d1d1d1;
+  scroll-behavior: smooth;
+}
+
+.text-shadow {
+  text-shadow: 5px 5px 0 rgba(16, 16, 16, .18);
+}
+
+.active {
+  color: #fa4729;
+}
+
+.border-css::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: 5px;
+  top: 5px;
+  box-sizing: border-box;
+  z-index: -2 !important;
+  border-color: #CFCFCF;
+}
+
+.mil-bg-title-boxed {
+  --dot-size: 2px;
+  --dot-space: 10px;
+  background: linear-gradient(90deg, #fff calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space), linear-gradient(#fff calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space), #101010;
+  position: absolute;
+}
+
+.mil-bg-title-boxed {
+  opacity: .35;
+  z-index: -1;
+}
+
+.mil-bg-title-boxed2 {
+  --dot-size: 2px;
+  --dot-space: 10px;
+  background: linear-gradient(90deg, #fff calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space), linear-gradient(#fff calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space), #101010;
+  position: absolute;
+}
+
+.mil-bg-title-boxed2 {
+  opacity: .35;
+}
+
+.container1 {
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: auto;
+}
+
+.section1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+}
