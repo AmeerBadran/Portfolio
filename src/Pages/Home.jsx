@@ -164,7 +164,7 @@ export default function Home() {
         <button onClick={() => handleScrollMove(3)} className={`w-5 h-5 rotate-45 border-[5px] ${activeSection === 3 ? 'border-[#F64E32]' : 'border-[#bbbbbb]'} hover:border-[#F64E32] transition-all duration-200 bg-[#FBFBFB]`}></button>
         <button onClick={() => handleScrollMove(4)} className={`w-5 h-5 rotate-45 border-[5px] ${activeSection === 4 ? 'border-[#F64E32]' : 'border-[#bbbbbb]'} hover:border-[#F64E32] transition-all duration-200 bg-[#FBFBFB]`}></button>
       </div>
-      <div className='container1 w-full bg-[#FBFBFB]' ref={scrollContainerRef}>
+      <div className='container1 w-full bg-[#FBFBFB] overflow-hidden' ref={scrollContainerRef}>
         <section className="section1 flex flex-col 2md:flex-row w-full 2md:opacity-0 2md:h-[100vh]" ref={(el) => { if (window.innerWidth >= 820) { sectionRefs.current[0] = el } }}>
           <div className="mil-bg-title-boxed top-[17%] 2md:top-[36%] 3xl:right-[89%] right-[90%] w-full h-[150px] 2md:block hidden" />
           <div className='flex flex-col items-center justify-center flex-grow  '>
@@ -184,9 +184,9 @@ export default function Home() {
           <img src={myImage} alt="myImage" className='2md:h-screen xl:w-auto 2md:max-w-[450px] lg:max-w-max object-cover 2md:mt-0 mt-10' />
         </section>
         <section className="section1 flex w-full 2md:opacity-0 2md:h-[100vh]" ref={(el) => { if (window.innerWidth >= 820) { sectionRefs.current[1] = el } }}>
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px]" />
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[30%]  left-[-10%] w-[400px] h-[350px]" />
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[0%] w-[400px] h-[350px]" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px] 2md:block hidden" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[30%]  left-[-10%] w-[400px] h-[350px] 2md:block hidden" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[0%] w-[400px] h-[350px] 2md:block hidden" />
           <div className='flex flex-col 2md:flex-row 2md:gap-10 slg:gap-32 items-center max-w-[1300px] p-5'>
             <div className='relative 2md:block hidden'>
               <img src={myImage2} alt="myImage" className='h-[550px] min-w-[400px] object-cover' />
@@ -204,10 +204,10 @@ export default function Home() {
           </div>
         </section>
         <section className="section1 flex w-full 2md:opacity-0 2md:h-[100vh]" ref={(el) => { if (window.innerWidth >= 820) { sectionRefs.current[2] = el } }}>
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px]" />
-          <div className="mil-bg-title-boxed rounded-tl-[200px] rounded-br-[170px] rounded-tr-[80px] rounded-bl-[50px] top-[30%]  left-[5%] w-[250px] h-[250px]" />
-          <div className="mil-bg-title-boxed rounded-tl-[110px] rounded-br-[90px] rounded-tr-[40px] rounded-bl-[20px] top-[58%]  left-[10%] w-[150px] h-[150px]" />
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[0%] w-[400px] h-[350px]" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px] 2md:block hidden" />
+          <div className="mil-bg-title-boxed rounded-tl-[200px] rounded-br-[170px] rounded-tr-[80px] rounded-bl-[50px] top-[30%]  left-[5%] w-[250px] h-[250px] 2md:block hidden" />
+          <div className="mil-bg-title-boxed rounded-tl-[110px] rounded-br-[90px] rounded-tr-[40px] rounded-bl-[20px] top-[58%]  left-[10%] w-[150px] h-[150px] 2md:block hidden" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[0%] w-[400px] h-[350px] 2md:block hidden" />
           <div className='max-w-[1200px] 2md:w-10/12 w-full mx-auto pr-4'>
             <div>
               <p className=' uppercase font-semibold mb-2'>main <span className='text-rose-600'>skills</span></p>
@@ -350,8 +350,8 @@ export default function Home() {
           </div>
         </section>
         <section className="section1 flex w-full 2md:opacity-0 2md:h-[100vh]" ref={(el) => { if (window.innerWidth >= 820) { sectionRefs.current[3] = el } }}>
-          <div className="mil-bg-title-boxed rounded-tl-[80px] rounded-br-[50px] rounded-tr-[200px] rounded-bl-[170px] top-[62%] left-[33%] w-[250px] h-[250px]" />
-          <div className="mil-bg-title-boxed rounded-tl-[40px] rounded-br-[30px] rounded-tr-[60px] rounded-bl-[70px] top-[75%]  left-[25%] w-[100px] h-[100px]" />
+          <div className="mil-bg-title-boxed rounded-tl-[80px] rounded-br-[50px] rounded-tr-[200px] rounded-bl-[170px] top-[62%] left-[33%] w-[250px] h-[250px] 2md:block hidden" />
+          <div className="mil-bg-title-boxed rounded-tl-[40px] rounded-br-[30px] rounded-tr-[60px] rounded-bl-[70px] top-[75%]  left-[25%] w-[100px] h-[100px] 2md:block hidden" />
           <div className='flex flex-col 2md:flex-row 2md:gap-14 xl:gap-32 p-5'>
             <div className='flex flex-col 2md:text-end 2md:max-w-[550px] slg:w-1/3'>
               <p className=' uppercase font-semibold mb-8'>Certificates</p>
@@ -410,10 +410,10 @@ export default function Home() {
           />
         </section>
         <section className="section1 flex w-full 2md:opacity-0 2md:h-[100vh] 2md:pb-0 pb-20" ref={(el) => { if (window.innerWidth >= 820) { sectionRefs.current[4] = el } }}>
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px]" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px] 2md:block hidden" />
           <div className="mil-bg-title-boxed rounded-tl-[200px] rounded-br-[170px] rounded-tr-[80px] rounded-bl-[50px] top-[30%]  left-[3%] w-[250px] h-[250px] xl:block hidden" />
           <div className="mil-bg-title-boxed rounded-tl-[110px] rounded-br-[90px] rounded-tr-[40px] rounded-bl-[20px] top-[58%]  left-[5%] w-[150px] h-[150px] xl:block hidden" />
-          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[30%] w-[400px] h-[350px]" />
+          <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[30%] w-[400px] h-[350px] 2md:block hidden" />
           <div className=' 2md:w-10/12 lg:w-8/12 mx-auto'>
             <div>
               <p className=' uppercase font-semibold mb-2'>Contact  <span className='text-rose-600'>me</span></p>
