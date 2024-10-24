@@ -10,12 +10,9 @@ export default function MyProjects() {
   return (
     <>
       <Navbar navBg={true} />
-      <div className="min-h-screen w-full bg-[#FBFBFB] 2md:pt-52 pt-36 pb-32 relative">
-        <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px]" />
-        <div className="mil-bg-title-boxed rounded-tl-[200px] rounded-br-[170px] rounded-tr-[80px] rounded-bl-[50px] top-[30%]  left-[5%] w-[250px] h-[250px]" />
-        <div className="mil-bg-title-boxed rounded-tl-[110px] rounded-br-[90px] rounded-tr-[40px] rounded-bl-[20px] top-[58%]  left-[10%] w-[150px] h-[150px]" />
-        <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[0%] w-[400px] h-[350px]" />
-        <div className="max-w-[850px] mx-auto text-center xl:text-start flex flex-col gap-6 mb-20 justify-center p-5">
+      <div className="min-h-screen w-full bg-[#FBFBFB] 2md:pt-52 pt-36 pb-32">
+
+        <div className="max-w-[850px] mx-auto text-center xl:text-start flex flex-col gap-6 mb-20 justify-center p-5 relative">
           <p className=" uppercase font-semibold">Featured <span className="text-red-500">projects</span></p>
           <h1 className='uppercase xmobile:text-6xl text-4xl font-extrabold text-shadow mr-4'>All Projects</h1>
           <p className='xl:ml-20 text-zinc-600 font-normal text-lg xl:max-w-[500px]'>
