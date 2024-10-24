@@ -10,7 +10,7 @@ export default function MyProjects() {
   return (
     <>
       <Navbar navBg={true} />
-      <div className="min-h-screen w-full bg-[#FBFBFB] 2md:pt-52 pt-36 pb-32">
+      <div className="min-h-screen w-full bg-[#FBFBFB] 2md:pt-52 pt-36 pb-32 overflow-hidden">
 
         <div className="max-w-[850px] mx-auto text-center xl:text-start flex flex-col gap-6 mb-20 justify-center p-5 relative">
           <p className=" uppercase font-semibold">Featured <span className="text-red-500">projects</span></p>
