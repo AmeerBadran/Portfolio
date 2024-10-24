@@ -47,7 +47,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-[60%] py-12">
+    <div className="2md:w-[60%] py-12">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}

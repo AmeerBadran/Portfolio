@@ -1,13 +1,18 @@
 /* eslint-disable react/prop-types */
 import { FaLink, FaYoutube } from "react-icons/fa";
 
-const ProjectCard = ({ image, altText, title, href, iconType, height, hoverWidth, hoverHeight, marginTop }) => {
+const ProjectCard = ({ image, altText, title, href, iconType, marginTop, index }) => {
   const Icon = iconType === "youtube" ? FaYoutube : FaLink;
 
+  // جعل البطاقات ذات الفهارس الزوجية قصيرة والفردية طويلة
+  const isEven = index % 2 === 0; // تحقق مما إذا كان الفهرس زوجيًا
+  const height = isEven ? "h-[405px]" : "h-[550px]";
+  const hoverHeight = isEven ? "group-hover:h-[405px]" : "group-hover:h-[555px]";
+
   return (
-    <div className={`${marginTop}`}>
-      <div className={`relative group w-[400px] ${height}`}>
-        <div className={`transform origin-center absolute w-full h-full ${hoverWidth} ${hoverHeight} border-2 border-black top-4 left-4 group-hover:scale-90 group-hover:top-2 group-hover:left-2 transition-all duration-700 z-10`}></div>
+    <div className={`${marginTop} mx-14 2xmobile:md:mx-20 2md:mx-0 justify-self-center`}>
+      <div className={`relative group 2md:w-[400px] ${height}`}>
+        <div className={`transform origin-center absolute w-full h-full ${hoverHeight} max-w-full border-2 border-black top-4 left-4 group-hover:scale-90 group-hover:top-2 group-hover:left-2 transition-all duration-700 z-10`}></div>
         <img
           src={image}
           alt={altText}

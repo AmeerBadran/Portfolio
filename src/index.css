@@ -33,7 +33,7 @@ body {
   left: 5px;
   top: 5px;
   box-sizing: border-box;
-  z-index: -2 !important;
+  z-index: -2;
   border-color: #CFCFCF;
 }
 
@@ -65,13 +65,30 @@ body {
   overflow-y: scroll;
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 .section1 {
   min-height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: center;
+}
+
+@media (max-width: 820px) {
+  .container1 {
+    height: auto;
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
+
+  .section1 {
+    min-height: auto;
+    scroll-snap-align: none;
+    justify-content: start;
+    padding-top:140px;
+    padding-left:30px;
+    padding-right: 30px;
+  }
+
 }

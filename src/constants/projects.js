@@ -1,9 +1,9 @@
-import lms from "../assets/images/lms.jpg"
-import HB from "../assets/images/HB.jpg"
-import pscd from "../assets/images/pscd.jpg"
-import SwSp from "../assets/images/Sweet Spot.jpg"
-import cos from "../assets/images/cos.jpg"
-import HR from "../assets/images/HR.jpg"
+import lms from "../assets/images/lms.jpg";
+import HB from "../assets/images/HB.jpg";
+import pscd from "../assets/images/pscd.jpg";
+import SwSp from "../assets/images/Sweet Spot.jpg";
+import cos from "../assets/images/cos.jpg";
+import HR from "../assets/images/HR.jpg";
 
 export const projects = [
   {
@@ -13,9 +13,6 @@ export const projects = [
     title: "Online Learning Platform",
     href: "https://ameerbadran.github.io/SkillWave/",
     iconType: "link",
-    height: "h-[400px]",
-    hoverWidth: "group-hover:w-[405px]",
-    hoverHeight: "group-hover:h-[405px]",
     marginTop: "",
   },
   {
@@ -25,9 +22,6 @@ export const projects = [
     title: "Sweet Spot",
     href: "https://sweet-spot-gamma.vercel.app/",
     iconType: "link",
-    height: "h-[550px]",
-    hoverWidth: "group-hover:w-[405px]",
-    hoverHeight: "group-hover:h-[555px]",
     marginTop: "",
   },
   {
@@ -37,9 +31,6 @@ export const projects = [
     title: "Clinic Office System",
     href: "https://ameerbadran.github.io/test-deploy/",
     iconType: "link",
-    height: "h-[400px]",
-    hoverWidth: "group-hover:w-[405px]",
-    hoverHeight: "group-hover:h-[405px]",
     marginTop: "",
   },
   {
@@ -49,10 +40,7 @@ export const projects = [
     title: "HR Management System",
     href: "https://ameerbadran.github.io/HR-System-Project/",
     iconType: "link",
-    height: "h-[550px]",
-    hoverWidth: "group-hover:w-[405px]",
-    hoverHeight: "group-hover:h-[555px]",
-    marginTop: "-mt-20",
+    marginTop: "2xl:-mt-20",
   },
   {
     id: 5,
@@ -61,10 +49,7 @@ export const projects = [
     title: "Health Basket",
     href: "https://www.linkedin.com/posts/ameer-badran-830015289_nodejs-fullstackdeveloper-javascript-activity-7165760768053833728-1Nk4?utm_source=share&utm_medium=member_desktop",
     iconType: "youtube",
-    height: "h-[400px]",
-    hoverWidth: "group-hover:w-[405px]",
-    hoverHeight: "group-hover:h-[405px]",
-    marginTop: "mt-[70px]",
+    marginTop: "2xl:mt-[70px]",
   },
   {
     id: 6,
@@ -73,9 +58,6 @@ export const projects = [
     title: "Palestine Car Driving",
     href: "https://www.youtube.com/watch?v=7dirIjqcQko",
     iconType: "youtube",
-    height: "h-[550px]",
-    hoverWidth: "group-hover:w-[405px]",
-    hoverHeight: "group-hover:h-[555px]",
-    marginTop: "-mt-20",
+    marginTop: "2xl:-mt-20",
   },
 ];

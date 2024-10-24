@@ -9,7 +9,7 @@ export default function ColoredButton({ buttonText, buttonType, linkTo = "", dow
       {buttonText}
     </Link>
   ) : (
-    <button className={commonClasses} onClick={downloadProp}>
+    <button type="button" className={commonClasses} onClick={downloadProp}>
       {buttonText}
     </button>
   );

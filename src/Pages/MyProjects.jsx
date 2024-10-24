@@ -10,20 +10,24 @@ export default function MyProjects() {
   return (
     <>
       <Navbar navBg={true} />
-      <div className="min-h-screen w-full bg-[#FBFBFB] pt-52 pb-32">
-        <div className="max-w-[850px] mx-auto flex flex-col gap-6 mb-20">
+      <div className="min-h-screen w-full bg-[#FBFBFB] 2md:pt-52 pt-36 pb-32 relative">
+        <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] top-[-10%]  right-[20%] w-[400px] h-[350px]" />
+        <div className="mil-bg-title-boxed rounded-tl-[200px] rounded-br-[170px] rounded-tr-[80px] rounded-bl-[50px] top-[30%]  left-[5%] w-[250px] h-[250px]" />
+        <div className="mil-bg-title-boxed rounded-tl-[110px] rounded-br-[90px] rounded-tr-[40px] rounded-bl-[20px] top-[58%]  left-[10%] w-[150px] h-[150px]" />
+        <div className="mil-bg-title-boxed rounded-tr-[250px] rounded-bl-[250px] rounded-tl-[150px] rounded-br-[150px] bottom-[-15%]  right-[0%] w-[400px] h-[350px]" />
+        <div className="max-w-[850px] mx-auto text-center xl:text-start flex flex-col gap-6 mb-20 justify-center p-5">
           <p className=" uppercase font-semibold">Featured <span className="text-red-500">projects</span></p>
-          <h1 className='uppercase text-6xl font-extrabold text-shadow mr-4'>All Projects</h1>
-          <p className='ml-20 text-zinc-600 font-normal text-lg max-w-[500px]'>
+          <h1 className='uppercase xmobile:text-6xl text-4xl font-extrabold text-shadow mr-4'>All Projects</h1>
+          <p className='xl:ml-20 text-zinc-600 font-normal text-lg xl:max-w-[500px]'>
             A Collection of my favorites project I’ve designed recently.
-            Feeling great while sharing here.
+            <br></br>Feeling great while sharing here.
           </p>
         </div>
-        <div className="border-t-2 border-black max-w-[1000px] ml-auto mr-[18px] relative">
+        <div className="border-t-2 border-black w-9/12 ml-auto mr-[18px] relative">
           <div className="border-t-2 border-[#CFCFCF] top-1.5 left-1.5 max-w-[1000px] ml-auto mr-5 absolute w-full"></div>
         </div>
-        <div className="grid grid-cols-3 max-w-[1300px] mx-auto mt-20 gap-x-20">
-          {projects.map((project) => (
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-32 justify-center mx-auto mt-20 2md:max-w-[1380px] 2md:p-20">
+          {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
               image={project.image}
@@ -31,11 +35,12 @@ export default function MyProjects() {
               title={project.title}
               href={project.href}
               iconType={project.iconType}
-              height={project.height}
               marginTop={project.marginTop}
+              index={index}
             />
           ))}
         </div>
+
         <div className="border-t-2 flex justify-center border-black max-w-[1300px] mx-auto relative my-20">
           <div className="border-t-2 border-[#CFCFCF] top-1.5 max-w-[1300px] left-3 absolute w-full"></div>
         </div>
