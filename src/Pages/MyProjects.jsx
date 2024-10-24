@@ -2,6 +2,8 @@ import Navbar from "../components/organism/Navbar";
 import { projects } from "../constants/projects";
 import ProjectCard from "../components/organism/ProjectCard";
 import Pagination from "../components/molecule/pagination";
+import { useEffect } from "react";
+
 
 export default function MyProjects() {
   const handlePageChange = (page) => {

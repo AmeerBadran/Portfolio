@@ -13,6 +13,8 @@ import CertificateModal from '../components/molecule/CertificateModal';
 import ContactForm from '../components/organism/ContactForm';
 import Navbar from '../components/organism/Navbar';
 
+
+
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -152,6 +154,7 @@ export default function Home() {
 
   return (
     <>
+      
       <Navbar navBg={false} />
       <div className='fixed 2md:flex flex-col gap-5 z-50 right-12 top-[40%] hidden'>
         <div className='border-l border-r h-full border-[#bbbbbb] absolute right-[45%]'></div>

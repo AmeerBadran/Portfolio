@@ -6,6 +6,15 @@ import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
+function ScrollToTop() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
+
 function Navbar({ navBg = false }) {
   const [isHalfScreen, setIsHalfScreen] = useState(window.innerWidth > 820);
   const [openNav, setOpenNav] = useState(false);
@@ -32,7 +41,7 @@ function Navbar({ navBg = false }) {
   };
   return (
     <div className="fixed pointer-events-none border-css before:border-2 border-2 m-3 z-20 border-black" style={{ width: 'calc(100% - 30px)', height: 'calc(100% - 30px)' }}>
-
+      <ScrollToTop />
       <div className="flex relative items-center justify-between">
         {navBg ? <div className=" absolute bg-[#FBFBFB] w-full h-full -z-10"></div> : <div className=" absolute bg-[#FBFBFB] 2md:bg-[#FBFBFB00] w-full h-full -z-10"></div>}
         <Link to='/' className="pointer-events-auto text-2xl relative border-css before:border-r-2 before:border-b-2 font-black h-20 flex items-center justify-center text-shadow tracking-wide border-r-2 border-b-2 border-black px-8">
