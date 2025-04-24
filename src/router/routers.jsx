@@ -1,8 +1,4 @@
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "../components/HOC/RootLayout";
 import Home from "../Pages/Home";
@@ -15,24 +11,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <Home />
-        ),
+        element: <Home />,
       },
       {
         path: "/myProjects",
-        element: (
-          <MyProjects />
-        ),
+        element: <MyProjects />,
       },
     ],
   },
-
-],
-  {
-    basename: "/Portfolio/",
-  }
-);
+]);
 
 export default function AppRouter() {
   return <RouterProvider router={router} />;
