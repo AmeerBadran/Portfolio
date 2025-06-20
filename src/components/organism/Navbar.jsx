@@ -40,7 +40,7 @@ function Navbar({ navBg = false }) {
     console.log('object')
   };
   return (
-    <div className="fixed pointer-events-none border-css before:border-2 border-2 m-3 z-20 border-black" style={{ width: 'calc(100% - 30px)', height: 'calc(100% - 30px)' }}>
+    <div className="fixed pointer-events-none border-css before:border-2 border-2 m-3 z-50 border-black" style={{ width: 'calc(100% - 30px)', height: 'calc(100% - 30px)' }}>
       <ScrollToTop />
       <div className="flex relative items-center justify-between">
         {navBg ? <div className=" absolute bg-[#FBFBFB] w-full h-full -z-10"></div> : <div className=" absolute bg-[#FBFBFB] 2md:bg-[#FBFBFB00] w-full h-full -z-10"></div>}

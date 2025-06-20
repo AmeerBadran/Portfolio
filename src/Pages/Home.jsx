@@ -301,7 +301,7 @@ export default function Home() {
                 </div>
                 <div className='relative w-full'>
                   <p className=' uppercase font-semibold '>SQL</p>
-                  <div className=' relative border-b-2 border-r-2 h-2 w-[90%] border-red-400'>
+                  <div className=' relative border-b-2 border-r-2 h-2 w-[70%] border-red-400'>
                     <span className=' absolute right-[-20px] top-[-20px] text-sm font-semibold text-red-500'>90%</span>
                   </div>
                   <div className='absolute w-full left-2 bottom-[-24%] border-b-2 border-[#c5c5c5] z-20'></div>
