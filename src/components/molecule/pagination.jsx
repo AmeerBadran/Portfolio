@@ -7,7 +7,7 @@ const Pagination = ({ totalPages, onPageChange }) => {
 
   const handlePageClick = (page) => {
     setCurrentPage(page);
-    onPageChange(page); // Trigger the passed function
+    onPageChange(page);
   };
 
   return (
